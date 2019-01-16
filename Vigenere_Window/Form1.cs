@@ -80,6 +80,7 @@ namespace Vigenere_Window
                 if (tmp < 0) tmp += 26;
                 ns += Convert.ToChar(65 + (tmp % 26));
                 if (++pwi == pw.Length) pwi = 0;
+                MessageBox.Show($"tmp {tmp}" + Environment.NewLine + $" t {t}");
             }
 
             return ns;
